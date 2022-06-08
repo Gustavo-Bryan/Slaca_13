@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  border: none;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+    "nav header header"
+    "nav main info"
+    "nav resumo resumo"
+    "nav discussao discussao"
+    "nav footer footer";
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+[src$=".svg"]:hover {
+  cursor: pointer;
+}
+
+.header-content {
+  background: var(--bg4);
+  justify-self: start;
+  grid-column: 1 / -1;
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--b3);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}

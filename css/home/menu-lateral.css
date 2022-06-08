@@ -1,0 +1,72 @@
+.container-info {
+  grid-area: info;
+  display: grid;
+  justify-items: end;
+  align-content: flex-start;
+  padding: 0 30px 30px;
+}
+
+.info-botoes {
+  grid-template-columns: repeat(3, auto);
+  padding-left: 30px;
+}
+
+.download-icon {
+  box-shadow: 0 4px 5px var(--bs12);
+}
+
+.container-info > div img:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px var(--bs12);
+}
+
+.container-info > div > span {
+  display: block;
+  grid-column: 1 / -1;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.info-detalhes {
+  border: 1px solid var(--b3);
+  max-width: 250px;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+
+.info-detalhes-conteudo {
+  padding: 15px;
+  max-height: 365px;
+  overflow-y: scroll;
+}
+
+.info-detalhes-conteudo li + li {
+  margin-top: 2px;
+}
+
+.info-detalhes-conteudo::-webkit-scrollbar {
+  width: 5px;
+}
+
+.info-detalhes-conteudo::-webkit-scrollbar-track {
+  background: #e7e7e7;
+  border-radius: 20px;
+}
+
+.info-detalhes-conteudo::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: solid #bfbfbf;
+}
+
+.info-detalhes-autores {
+  margin: 20px 0;
+}
+
+.info-detalhes-ref {
+  margin-bottom: 50px;
+}
+
+.info-detalhes-ref a:hover {
+  color: var(--b2);
+}

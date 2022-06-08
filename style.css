@@ -1,0 +1,178 @@
+/* Utilitários */
+@import "./css/utilitarios/Cores-e-Tipografia.css";
+@import "./css/utilitarios/global.css";
+
+/* Página Home */
+@import "./css/home/header.css";
+@import "./css/home/nav.css";
+@import "./css/home/main.css";
+@import "./css/home/menu-lateral.css";
+@import "./css/home/resumo.css";
+@import "./css/home/discussao.css";
+@import "./css/home/footer.css";
+
+@media (max-width: 1300px) {
+  .nav-titulo {
+    padding: 16px 20px;
+  }
+
+  .header-language {
+    margin-left: 0;
+  }
+
+  .main-video-extras img {
+    width: 64px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-video {
+    display: none;
+  }
+
+  .nav-container img {
+    max-width: 150px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "nav header"
+      "nav main"
+      "nav info"
+      "nav resumo"
+      "nav discussao"
+      "nav footer";
+  }
+
+  .header-perfil span {
+    display: none;
+  }
+
+  .header-perfil {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-perfil::after {
+    content: "";
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+    cursor: pointer;
+  }
+
+  .header-language span,
+  .header-language img + img {
+    display: none;
+  }
+
+  .container-info {
+    justify-items: start;
+    padding: 0 0 30px 43px;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "nav"
+      "header"
+      "main"
+      "info"
+      "resumo"
+      "discussao"
+      "footer";
+  }
+
+  .nav-container {
+    min-height: auto;
+    position: relative;
+  }
+
+  .nav-titulo {
+    padding-left: 50px;
+  }
+
+  .nav-container img {
+    display: none;
+  }
+
+  .nav-itens {
+    display: none;
+  }
+
+  .nav-itens.ativo {
+    display: grid;
+    position: absolute;
+    background-color: #fff;
+    z-index: 999;
+    width: 200px;
+    animation: show-right 0.3s forwards;
+    box-shadow: 4px 4px 8px var(--bs24);
+  }
+
+  [data-menu="mobile"] {
+    display: grid;
+    position: absolute;
+    left: 5px;
+    top: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: transparent;
+  }
+
+  [data-menu="mobile"]::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 8px 0 #fff, 0px -8px 0 #fff;
+  }
+
+  .header-container {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+  }
+
+  .header-language {
+    margin-left: 20px;
+  }
+
+  .header-container,
+  .main-container,
+  .container-info {
+    padding-left: 20px;
+  }
+
+  .resumo-container,
+  .discussao-container {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    display: grid;
+    gap: 0px;
+    justify-items: center;
+    border-top: 2px solid var(--bg1);
+  }
+}
+
+@media (max-width: 500px) {
+  .btn img {
+    max-width: 12px;
+  }
+
+  #outra-discussao {
+    padding: 10px 20px;
+  }
+}

@@ -1,0 +1,240 @@
+.discussao-container {
+  grid-area: discussao;
+  position: relative;
+  border-radius: 5px;
+}
+
+.discussao-conteudo {
+  display: grid;
+  justify-items: center;
+  gap: 30px 0;
+  padding: 15px;
+}
+
+.discussao-conteudo-imgs {
+  display: flex;
+  gap: 50px;
+}
+
+.discussao-conteudo-ultimo-span {
+  max-width: 80ch;
+  text-align: center;
+}
+
+.btn {
+  background: linear-gradient(var(--p1), var(--p2));
+  padding: 10px 20px;
+  box-shadow: 0px 2px 2px var(--bs24);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  height: 1px;
+  width: calc(100% - 30px);
+  left: 15px;
+  z-index: -1;
+  position: absolute;
+  background-color: var(--bg1);
+}
+
+.discussao-topico {
+  padding: 18px 25px;
+  margin: 0 15px;
+  border: 1px solid var(--bg1);
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px var(--bs12);
+  position: relative;
+}
+
+.topico-final {
+  margin-top: 15px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.assunto {
+  display: block;
+}
+
+.pergunta {
+  margin: 10px 0;
+}
+
+.topico-footer {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.topico-footer span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.formulario-discussao {
+  padding: 15px;
+  display: none;
+  justify-self: start;
+}
+
+.formulario-discussao > span {
+  justify-self: center;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#assunto-discussao,
+#conteudo-discussao {
+  border: 1px solid var(--bg2);
+}
+
+#assunto-discussao:focus,
+#conteudo-discussao:focus {
+  outline: 2px solid var(--p1);
+  outline-offset: -2px;
+}
+
+#assunto-discussao {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+#conteudo-discussao {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 15px;
+  resize: none;
+}
+
+.formulario-discussao-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg2);
+  align-items: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.formulario-discussao-footer > div {
+  padding-left: 20px;
+}
+
+.formulario-discussao-footer > div img {
+  padding: 10px;
+}
+
+.formulario-discussao-footer > div img:hover {
+  box-shadow: none;
+}
+
+#enviar {
+  padding: 10px 80px;
+  background: linear-gradient(180deg, var(--p1) 0%, var(--p2) 100%);
+  cursor: pointer;
+  border-bottom-right-radius: 5px;
+}
+
+hr {
+  margin: 15px 0 30px;
+  border: none;
+  height: 1px;
+  border-radius: 5px;
+  background-color: var(--bg1);
+}
+
+.feedback-container {
+  padding: 15px;
+  display: none;
+  justify-items: center;
+}
+
+.feedback-container span + span {
+  margin: 18px 0 30px;
+}
+
+.feedback-container a {
+  margin-bottom: 47px;
+  text-decoration: underline;
+  color: var(--p3);
+}
+
+.espaço-nova-discussao {
+  margin-bottom: 15px;
+}
+
+#outra-discussao {
+  padding: 10px 50px;
+}
+
+.container-aguarde {
+  display: none;
+  align-content: center;
+  justify-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  gap: 10px;
+  top: 0;
+  left: 0;
+  background-color: rgba(221, 221, 221, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+.container-aguarde > span {
+  color: var(--c0);
+}
+
+#editar {
+  color: var(--p2);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.resposta-container {
+  display: none;
+  margin: 0 15px;
+}
+
+.resposta-container.ativo {
+  display: block;
+}
+
+.resposta-item {
+  padding: 15px 37px 15px 15px;
+  background: var(--bg3);
+  border: 1px solid var(--bg1);
+}
+
+.resposta-autor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coautor {
+  padding-bottom: 35px;
+}
+
+.resposta-cargo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.resposta-item p {
+  margin-top: 10px;
+}
+
+.bg-w {
+  background-color: var(--w);
+}

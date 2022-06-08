@@ -1,0 +1,57 @@
+.nav-container {
+  grid-area: nav;
+  box-shadow: 4px 0px 8px var(--bs12);
+  min-height: 100vh;
+  position: relative;
+}
+
+[data-menu="mobile"] {
+  display: none;
+}
+
+.nav-titulo {
+  display: block;
+  background: linear-gradient(180deg, var(--p1) 0%, var(--p2) 100%);
+  padding: 18px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.nav-itens a {
+  display: block;
+  padding: 10px 0 10px 20px;
+  border-bottom: 2px solid var(--bg1);
+}
+
+.nav-itens a:hover {
+  background: #f3ded4;
+}
+
+.trabalhos {
+  background-color: var(--bg4);
+  position: relative;
+}
+
+.trabalhos a {
+  padding-left: 30px;
+}
+
+.trabalhos::before {
+  content: "";
+  height: 100%;
+  width: 5px;
+  background: linear-gradient(180deg, var(--p1) 0%, var(--p2) 100%);
+  position: absolute;
+  left: 0;
+  top: -1px;
+}
+
+@keyframes show-right {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  } to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

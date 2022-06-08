@@ -1,0 +1,53 @@
+.main-container {
+  grid-area: main;
+  margin: 0 20px 30px 0;
+  padding-left: 43px;
+}
+
+.main-container h2 {
+  margin-bottom: 20px;
+  max-width: 60ch;
+}
+
+.main-img-container {
+  position: relative;
+  cursor: pointer;
+}
+
+#img-video {
+  max-width: 100%;
+}
+
+.main-video {
+  position: absolute;
+  top: 0;
+}
+
+.video.esconder {
+  transform: translateX(-20px);
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.main-video > span {
+  display: block;
+  padding: 35px 0 180px;
+  max-width: 50ch;
+}
+
+.main-video > span,
+.main-video-extras {
+  padding-left: 32px;
+}
+
+.main-video-extras {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 15px;
+}
+
+.main-video-extras span {
+  display: block;
+}
+

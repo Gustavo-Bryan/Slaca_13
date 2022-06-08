@@ -1,0 +1,223 @@
+:root {
+  /* Cores dos Textos*/
+  --c0: #707070;
+  --c1: #757575;
+  --c2: #5c5c5c;
+  --c3: #595959;
+  --c4: #4d4d4d;
+  --c5: #4e4e4e;
+  --c6: #333333;
+  --w: #fff;
+
+  /* Cores das bordas */
+  --b1: #ada0a0;
+  --b2: #725c5c;
+  --b3: #ececec;
+
+  /* Cores de destaque */
+  --p1: #ffb354;
+  --p2: #ee7a3a;
+  --p3: #f48f44;
+
+  /* Box-shadow */
+  --bs12: rgba(0, 0, 0, 0.12);
+  --bs24: rgba(0, 0, 0, 0.24);
+
+  /* Background-colors */
+
+  --bg1: #e7e7e7;
+  --bg2: #cccccc;
+  --bg3: #f8f8f8;
+  --bg4: #fdf1eb;
+}
+
+.c1 {
+  color: var(--c1);
+}
+
+.c2 {
+  color: var(--c2);
+}
+
+.c3 {
+  color: var(--c3);
+}
+
+.c4 {
+  color: var(--c4);
+}
+
+.c5 {
+  color: var(--c5);
+}
+
+.c6 {
+  color: var(--c6);
+}
+
+.w {
+  color: var(--w);
+}
+
+.b1 {
+  color: var(--b1);
+}
+
+.b2 {
+  color: var(--b2);
+}
+
+.p1 {
+  color: var(--p1);
+}
+
+.p2 {
+  color: var(--p2);
+}
+
+/* -------------------Tipografia------------------- */
+
+.font-1-xxg-b {
+  font: 900 2.125rem "Roboto";
+}
+
+.font-1-xxg {
+  font: 700 1.875rem "Roboto";
+}
+
+.font-1-xg {
+  font: 400 1.375rem "Roboto";
+}
+
+.font-1-xg-b {
+  font: 900 1.25rem "Roboto";
+}
+
+.font-1-xg-b2 {
+  font: 900 1.5rem "Roboto";
+}
+
+.font-1-m {
+  font: 500 1.25rem "Roboto";
+}
+
+.font-1-m-b {
+  font: 700 1.125rem "Roboto";
+}
+
+.font-1-p {
+  font: 400 0.875rem "Roboto";
+}
+
+.font-1-p300 {
+  font: 300 0.875rem "Roboto";
+}
+
+.font-1-p-b {
+  font: 500 0.875rem "Roboto";
+}
+
+.font-2-m-b {
+  font: 700 1rem "Quicksand";
+}
+
+.font-2-p {
+  font: 400 0.875rem "Quicksand";
+}
+
+.font-2-p-b {
+  font: 700 0.875rem "Quicksand";
+}
+
+.font-2-pp {
+  font: 400 0.75rem "Quicksand";
+}
+
+.font-2-pp-mb {
+  font: 500 0.75rem "Quicksand";
+}
+
+.font-2-pp-mb-875 {
+  font: 500 0.875rem "Quicksand";
+}
+
+.font-2-pp-b {
+  font: 700 0.75rem "Quicksand";
+}
+
+sup {
+  font: 400 0.45rem "Quicksand";
+  color: var(--b1);
+}
+
+label {
+  font: 700 1rem "Roboto";
+}
+
+@media (max-width: 1300px) {
+  .font-1-xxg-b {
+    font: 900 1.5rem "Roboto";
+  }
+
+  .font-1-xg {
+    font: 400 1.25rem "Roboto";
+  }
+
+  .font-1-xg-b {
+    font: 900 1rem "Roboto";
+  }
+
+  .font-1-xg-b2 {
+    font: 900 1.125rem "Roboto";
+  }
+}
+
+@media (max-width: 1200px) {
+  .font-1-xxg {
+    font: 700 1.5rem "Roboto";
+  }
+
+  .font-1-xg {
+    font: 400 1rem "Roboto";
+  }
+
+  .font-1-p {
+    font: 400 0.75rem "Roboto";
+  }
+
+  .font-1-xg-b {
+    font: 900 0.875rem "Roboto";
+  }
+}
+
+@media (max-width: 1000px) {
+  .font-1-xg-b {
+    font: 900 1.25rem "Roboto";
+  }
+}
+
+@media (max-width: 500px) {
+  .font-1-xg-b {
+    font: 900 1rem "Roboto";
+  }
+
+  .font-1-xg {
+    font: 400 0.875rem "Roboto";
+  }
+
+  .font-1-p {
+    font: 400 0.65rem "Roboto";
+  }
+
+  .font-2-p {
+    font: 400 0.75rem "Quicksand";
+  }
+
+  .font-1-m-b {
+    font: 700 0.875rem "Roboto";
+  }
+
+  .font-2-p-b {
+    font: 700 0.75rem "Quicksand";
+  }
+}

@@ -1,0 +1,13 @@
+footer {
+  grid-area: footer;
+  padding-top: 20px;
+  margin: 0 40px 40px 30px;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  border-top: 2px solid var(--bg1);
+}
+
+footer p {
+  margin-top: 20px;
+}

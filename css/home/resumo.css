@@ -1,0 +1,35 @@
+.resumo-container {
+  grid-area: resumo;
+}
+
+.resumo-container,
+.discussao-container {
+  margin: 0 30px 30px 43px;
+  border: 1px solid var(--b3);
+  border-radius: 5px;
+  padding-bottom: 15px;
+}
+
+.resumo-conteudo {
+  padding: 15px;
+}
+
+.resumo-conteudo p {
+  margin-bottom: 20px;
+}
+
+.resumo-conteudo-p {
+  display: inline;
+}
+
+.ver {
+  cursor: pointer;
+}
+
+#texto-extra {
+  display: none;
+}
+
+.ultimo-p {
+  display: inline;
+}
