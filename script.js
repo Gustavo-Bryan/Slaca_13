@@ -106,11 +106,17 @@ btnResposta.addEventListener("click", () => {
   containerResposta.classList.toggle("ativo");
 });
 
-
 // Menu-Hámburguer
 const menu = document.querySelector("[data-menu='mobile']");
 const itenMenu = document.querySelector(".nav-itens");
 
 menu.addEventListener("click", () => {
   itenMenu.classList.toggle("ativo");
+});
+
+// Mostrar o e-mail do usuário após o click na foto de perfil
+const fotoPerfil = document.querySelector(".header-perfil img");
+const spanPerfil = document.querySelector(".header-perfil span + span");
+fotoPerfil.addEventListener("click", () => {
+  spanPerfil.classList.toggle("ativo");
 });

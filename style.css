@@ -48,13 +48,14 @@
       "nav footer";
   }
 
-  .header-perfil span {
-    display: none;
+  .nav-titulo {
+    padding: 18px 20px;
   }
 
   .header-perfil {
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   .header-perfil::after {
@@ -65,9 +66,35 @@
     cursor: pointer;
   }
 
-  .header-language span,
-  .header-language img + img {
+  .header-perfil span {
+    opacity: 0;
+    position: absolute;
+    right: 0px;
+    top: 48px;
+    background-color: var(--bg4);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--b3);
+    box-shadow: 2px 4px 8px var(--bs12);
+    transform: translateY(-20px);
+    transition: 0.3s;
+  }
+
+  .header-perfil span.ativo {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .none {
+    display: none !important;
+  }
+
+  .header-language span {
     display: none;
+  }
+
+  .header-language-seta {
+    width: 8px;
   }
 
   .container-info {

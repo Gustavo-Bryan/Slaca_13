@@ -50,7 +50,8 @@
   from {
     transform: translateY(-40px);
     opacity: 0;
-  } to {
+  }
+  to {
     transform: translateX(0px);
     opacity: 1;
   }
