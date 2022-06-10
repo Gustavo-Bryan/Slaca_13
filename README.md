@@ -2,7 +2,7 @@
 
 ### Parte inicial do site:
 
-<img src="./Prints/Inicio-do-site.png" alt="Parte superior do projeto"> <br/><br/>
+<img src="./Prints/Inicio-do-site.PNG" alt="Parte superior do projeto"> <br/><br/>
 
 ### Parte final do site:
 
