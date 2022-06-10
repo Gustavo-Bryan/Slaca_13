@@ -2,7 +2,7 @@
 
 ### Parte inicial do site:
 
-<img src="./Prints/Inicio-do-site.png" alt="Parte superior do projeto"> <br/><br/>
+<img src="[./Prints/Inicio-do-site.png](https://github.com/Gustavo-Bryan/Slaca_13/issues/1#issue-1267023578)" alt="Parte superior do projeto"> <br/><br/>
 
 ### Parte final do site:
 
