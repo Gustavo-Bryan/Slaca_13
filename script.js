@@ -4,10 +4,13 @@ const mainContainer = document.querySelector(".main-container");
 const itensVideo = document.querySelectorAll(".video");
 
 mainContainer.addEventListener("click", () => {
-  imgVideo.src = "./imgs/Video-play.png";
-
   itensVideo.forEach((item) => {
-    item.classList.add("esconder");
+    item.classList.toggle("esconder");
+    if (item.classList.contains("esconder")) {
+      imgVideo.src = "./imgs/Video-play.png";
+    } else {
+      imgVideo.src = "./imgs/Video.png";
+    }
   });
 });
 
@@ -83,22 +86,17 @@ btnEnviar.addEventListener("click", () => {
     //Editar o Tópico
     const editar = novoTopico.querySelector("#editar");
     editar.addEventListener("click", () => {
-      aguarde.style.display = "none";
-
-      novoAssunto.attributes[1].value = "true";
-      novoAssunto.style.outline = "1px solid var(--p1)";
-      novoAssunto.style.padding = "5px";
-
-      novaMensagem.attributes[1].value = "true";
-      novaMensagem.style.outline = "1px solid var(--p1)";
-      novaMensagem.style.padding = "5px";
+      formularioDiscussao.style.display = "grid";
+      feedback.style.display = "none";
+      novoTopico.remove();
+      btnEnviar.innerText = "Editar";
     });
   } else {
-    alert("Preencha o campo Assunto e coloque sua mensagem no campo informado");
+    alert("Coloque um Assunto e coloque sua mensagem no campo Conteúdo");
   }
 });
 
-// Mostrar as resposta do último post
+// Mostrar as respostas do último post
 const btnResposta = document.querySelector(".resposta");
 const containerResposta = document.querySelector(".resposta-container");
 
@@ -119,4 +117,27 @@ const fotoPerfil = document.querySelector(".header-perfil img");
 const spanPerfil = document.querySelector(".header-perfil span + span");
 fotoPerfil.addEventListener("click", () => {
   spanPerfil.classList.toggle("ativo");
+});
+
+// Interação ao clicar no favoritar
+const favoritar = document.querySelectorAll(".favoritar");
+
+favoritar.forEach((imgFavoritar) => {
+  imgFavoritar.addEventListener("click", (event) => {
+    event.target.classList.toggle("ativo");
+    let contador = event.target.nextElementSibling.children[0];
+    let likes = event.target.nextElementSibling.children[1];
+
+    if (event.target.classList.contains("ativo")) {
+      contador.innerText++;
+      if (+contador.innerText > 1) {
+        likes.innerText = "likes";
+      }
+    } else {
+      if (+contador.innerText == 2) {
+        likes.innerText = "like";
+      }
+      contador.innerText--;
+    }
+  });
 });

@@ -71,9 +71,22 @@
   align-items: center;
 }
 
-.topico-footer span:hover {
+.like:hover,
+.resposta:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.topico-footer .favoritar {
+  background: url(../../imgs/Icones/favoritar.svg) no-repeat;
+  width: 30px;
+  height: 22px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.topico-footer .favoritar.ativo {
+  background: url(../../imgs/Icones/favoritar-ativo.svg) no-repeat;
 }
 
 .formulario-discussao {
@@ -126,18 +139,21 @@ label {
 }
 
 .formulario-discussao-footer > div {
-  padding-left: 20px;
+  padding-left: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .formulario-discussao-footer > div img {
-  padding: 10px;
+  height: 20px;
+  width: 20px;
 }
 
 .formulario-discussao-footer > div img:hover {
   box-shadow: none;
 }
 
-#enviar {
+#enviar, .editando {
   padding: 10px 80px;
   background: linear-gradient(180deg, var(--p1) 0%, var(--p2) 100%);
   cursor: pointer;
