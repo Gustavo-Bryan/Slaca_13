@@ -97,7 +97,7 @@ btnEnviar.addEventListener("click", () => {
 });
 
 // Mostrar as respostas do último post
-const btnResposta = document.querySelector(".resposta");
+const btnResposta = document.querySelector("#resposta");
 const containerResposta = document.querySelector(".resposta-container");
 
 btnResposta.addEventListener("click", () => {
